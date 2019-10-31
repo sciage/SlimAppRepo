@@ -7,9 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit739c3f8d7fc44e9d94626186241dfe5f
 {
     public static $files = array (
-        '59af96974553a1fc6407327354b6f47e' => __DIR__ . '/..' . '/nette/di/src/compatibility.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
+        '59af96974553a1fc6407327354b6f47e' => __DIR__ . '/..' . '/nette/di/src/compatibility.php',
+        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
@@ -43,7 +44,9 @@ class ComposerStaticInit739c3f8d7fc44e9d94626186241dfe5f
             'Symfony\\Polyfill\\Php73\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Contracts\\Translation\\' => 30,
             'Symfony\\Contracts\\Service\\' => 26,
+            'Symfony\\Component\\Translation\\' => 30,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\Console\\' => 26,
             'Slim\\Tests\\' => 11,
@@ -53,6 +56,7 @@ class ComposerStaticInit739c3f8d7fc44e9d94626186241dfe5f
         ),
         'P' => 
         array (
+            'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Server\\' => 16,
             'Psr\\Http\\Message\\' => 17,
@@ -72,6 +76,13 @@ class ComposerStaticInit739c3f8d7fc44e9d94626186241dfe5f
         array (
             'Jean85\\' => 7,
         ),
+        'I' => 
+        array (
+            'Illuminate\\Support\\' => 19,
+            'Illuminate\\Database\\' => 20,
+            'Illuminate\\Contracts\\' => 21,
+            'Illuminate\\Container\\' => 21,
+        ),
         'H' => 
         array (
             'Http\\Message\\' => 13,
@@ -89,6 +100,7 @@ class ComposerStaticInit739c3f8d7fc44e9d94626186241dfe5f
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
+            'Doctrine\\Common\\Inflector\\' => 26,
             'DeepCopy\\' => 9,
         ),
         'C' => 
@@ -124,9 +136,17 @@ class ComposerStaticInit739c3f8d7fc44e9d94626186241dfe5f
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Symfony\\Contracts\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation-contracts',
+        ),
         'Symfony\\Contracts\\Service\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/service-contracts',
+        ),
+        'Symfony\\Component\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation',
         ),
         'Symfony\\Component\\Finder\\' => 
         array (
@@ -151,6 +171,10 @@ class ComposerStaticInit739c3f8d7fc44e9d94626186241dfe5f
         'Slim\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Slim',
+        ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
         ),
         'Psr\\Log\\' => 
         array (
@@ -202,6 +226,22 @@ class ComposerStaticInit739c3f8d7fc44e9d94626186241dfe5f
         array (
             0 => __DIR__ . '/..' . '/jean85/pretty-package-versions/src',
         ),
+        'Illuminate\\Support\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/support',
+        ),
+        'Illuminate\\Database\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/database',
+        ),
+        'Illuminate\\Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/contracts',
+        ),
+        'Illuminate\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/container',
+        ),
         'Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-http/message-factory/src',
@@ -226,6 +266,10 @@ class ComposerStaticInit739c3f8d7fc44e9d94626186241dfe5f
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
         ),
+        'Doctrine\\Common\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
+        ),
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
@@ -233,6 +277,20 @@ class ComposerStaticInit739c3f8d7fc44e9d94626186241dfe5f
         'Composer\\XdebugHandler\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/xdebug-handler/src',
+        ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
+    );
+
+    public static $prefixesPsr0 = array (
+        'U' => 
+        array (
+            'UpdateHelper\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/kylekatarnls/update-helper/src',
+            ),
         ),
     );
 
@@ -908,6 +966,8 @@ class ComposerStaticInit739c3f8d7fc44e9d94626186241dfe5f
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit739c3f8d7fc44e9d94626186241dfe5f::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit739c3f8d7fc44e9d94626186241dfe5f::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit739c3f8d7fc44e9d94626186241dfe5f::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit739c3f8d7fc44e9d94626186241dfe5f::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit739c3f8d7fc44e9d94626186241dfe5f::$classMap;
 
         }, null, ClassLoader::class);

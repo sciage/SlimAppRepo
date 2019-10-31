@@ -14,12 +14,23 @@ final class Versions
 {
     public const ROOT_PACKAGE_NAME = 'slim/slim';
     public const VERSIONS          = array (
+  'doctrine/inflector' => 'v1.3.0@5527a48b7313d15261292c149e55e26eae771b0a',
+  'illuminate/container' => 'v5.7.28@8c3a75e464d59509ae88db152cab61a3f115b9ec',
+  'illuminate/contracts' => 'v5.7.28@b63324d349a8ae2156fbc2697c1ccc85879b3803',
+  'illuminate/database' => '5.7.19@8df1a4ca7f66e9ae9462978aa6de77e1c4cc839f',
+  'illuminate/support' => 'v5.7.28@3e2810145f37eb89fa11759781ee88ee1c1a5262',
+  'kylekatarnls/update-helper' => '1.2.0@5786fa188e0361b9adf9e8199d7280d1b2db165e',
+  'nesbot/carbon' => '1.39.1@4be0c005164249208ce1b5ca633cd57bdd42ff33',
   'nikic/fast-route' => 'v1.3.0@181d480e08d9476e61381e04a71b34dc0432e812',
   'psr/container' => '1.0.0@b7ce3b176482dbbc1245ebf52b181af44c2cf55f',
   'psr/http-factory' => '1.0.1@12ac7fcd07e5b077433f5f2bee95b3a771bf61be',
   'psr/http-message' => '1.0.1@f6561bf28d520154e4b0ec72be95418abe6d9363',
   'psr/http-server-handler' => '1.0.1@aff2f80e33b7f026ec96bb42f63242dc50ffcae7',
   'psr/http-server-middleware' => '1.0.1@2296f45510945530b9dceb8bcedb5cb84d40c5f5',
+  'psr/simple-cache' => '1.0.1@408d5eafb83c57f6365a3ca330ff23aa4a5fa39b',
+  'symfony/polyfill-mbstring' => 'v1.12.0@b42a2f66e8f1b15ccf25652c3424265923eb4f17',
+  'symfony/translation' => 'v4.3.5@fe6193b066c457c144333c06aaa869a2d42a167f',
+  'symfony/translation-contracts' => 'v1.1.7@364518c132c95642e530d9b2d217acbc2ccac3e6',
   'composer/xdebug-handler' => '1.3.3@46867cbf8ca9fb8d60c506895449eb799db1184f',
   'doctrine/instantiator' => '1.2.0@a2c590166b2133a4633738648b6b064edae0814a',
   'fig/http-message-util' => '1.1.3@35b19404371b31b3a43823c755398c48c9966db4',
@@ -73,13 +84,12 @@ final class Versions
   'symfony/console' => 'v4.3.5@929ddf360d401b958f611d44e726094ab46a7369',
   'symfony/finder' => 'v4.3.5@5e575faa95548d0586f6bedaeabec259714e44d1',
   'symfony/polyfill-ctype' => 'v1.12.0@550ebaac289296ce228a706d0867afc34687e3f4',
-  'symfony/polyfill-mbstring' => 'v1.12.0@b42a2f66e8f1b15ccf25652c3424265923eb4f17',
   'symfony/polyfill-php73' => 'v1.12.0@2ceb49eaccb9352bff54d22570276bb75ba4a188',
   'symfony/service-contracts' => 'v1.1.7@ffcde9615dc5bb4825b9f6aed07716f1f57faae0',
   'theseer/tokenizer' => '1.1.3@11336f6f84e16a720dae9d8e6ed5019efa85a0f9',
   'webmozart/assert' => '1.5.0@88e6d84706d09a236046d686bbea96f07b3a34f4',
   'zendframework/zend-diactoros' => '2.1.5@6dcf9e760a6b476f3e9d80abbc9ce9c4aa921f9c',
-  'slim/slim' => 'No version set (parsed as 1.0.0)@',
+  'slim/slim' => 'dev-master@77a531eb81f70871bc1403eddaf8465e3e52281b',
 );
 
     private function __construct()
